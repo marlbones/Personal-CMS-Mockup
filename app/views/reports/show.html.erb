@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @report.title %>
+</p>
+
+<p>Report was created on etc etc. by etc for etc.</p>
+
+<% @pages.each do |page| %>
+  <%= link_to 'Show Report', page %>
+<% end %>
+
+<br>
+
+<%= link_to 'Create Content', new_page_path %> |
+<%= link_to 'Back', reports_path %>

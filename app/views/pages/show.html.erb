@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<div class="<%= @page.header_colour %>">
+  <h2><%= @page.report.title %></h2>
+  <%= link_to 'Edit Header Color', edit_page_path(@page) %>
+  <div class="sidenav">
+    <p><strong>Menu</strong></p>
+    <ul>
+      <li>example</li>
+      <li>example</li>
+      <li>example</li>
+      <li>example</li>
+    </ul>
+  </div>
+  <div class="content">
+    <p><strong>Menu</strong></p>
+    <p>example textexample textexample textexample textexample textexample textexample text</p>
+    <p>example textexample textexample textexample textexample textexample textexample text</p>
+    <p>example textexample textexample textexample textexample textexample textexample text</p>
+    <p>example textexample textexample textexample textexample textexample textexample text</p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<hr>
+<div class="footer_<%= @page.footer_colour %> footer">
+  <p>footer</p>
+</div>
