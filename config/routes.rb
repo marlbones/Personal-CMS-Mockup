@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  resources :sections
   resources :reports do
     member do
-      resources :pages
+      resources :pages do
+        member do
+          resources :sections
+        end
+      end
     end
   end
   root 'reports#index'

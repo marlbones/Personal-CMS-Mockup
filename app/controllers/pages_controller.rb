@@ -10,6 +10,7 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+    @sections = Section.where(:pages_id => @page.id)
   end
 
   # GET /pages/new
